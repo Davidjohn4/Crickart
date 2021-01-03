@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<html lang="en">
+<head>
+<title>Product</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Little Closet template">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'Category/styles/bootstrap-4.1.2/bootstrap.min.css' %}">
+<link href="{% static 'Category/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'Category/plugins/flexslider/flexslider.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'Category/styles/product.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'Category/styles/product_responsive.css' %}">
+
+<div class="product">
+			<div class="container">
+				<div class="row">
+					
+					<!-- Product Image -->
+					<div class="col-lg-6">
+						<div class="product_image_slider_container">
+							<div id="slider" class="flexslider">
+								<p> <img src="{{post.image.url}}" height='750px' width='450px'></p>
+
+            <div class="fb-comments" data-href="http://127.0.0.1:8000/admin/crikartapp{{post.post_id}}" data-width="" data-numposts="5" ></div>
+								
+							</div>
+						</div>
+					</div>
+<div class="col-lg-6 product_col">
+						<div class="product_info">
+							<div class="product_name">
+								<b><h4 class="font-italic">Product Details</h4></b><br><br></div>
+								 <h3 class=" font-italic ">
+           {{post.product_name}}
+          </h3>
+							<div class="product_category">In <a href="category.html">Category</a></div>
+							<div class="product_rating_container d-flex flex-row align-items-center justify-content-start">
+								<div class="rating_r rating_r_4 product_rating"><i></i><i></i><i></i><i></i><i></i></div>
+								<div class="product_reviews">4.7 out of (3514)</div>
+								<div class="product_reviews_link"><a href="https://www.flipkart.com/sunley-sarthak-junior-combo-cricket-kit/product-reviews/itmf6fg6gvguhrev?pid=KITF6FEEVHVXUBEG&lid=LSTKITF6FEEVHVXUBEGYYEWFO&marketplace=FLIPKART">Reviews</a></div>
+							</div>
+							<div class="product_price"><span></span></div>
+						
+							<div class="product_text">
+								<p>
+									<div class="product_category">
+										<h5>Rs.{{post.price}}</h5><br>
+                                        <p>{{post.description}}</p>
+									</p></div>
+									<div class="fb-like my-4" data-href="http://127.0.0.1:8000/admin/crikartapp{{post.product_id}}" data-width="" data-layout="standard" data-action="like" data-size="large" data-show-faces="flase" data-share="true" >
+
+										<div class="blog-post">
+           									 <h2 class="blog-post-title">{{post.head0}}</h2>
+           								</div>
+            						</div>
+
+							</div>
+							<div class="product_buttons">
+								<div class="text-right d-flex flex-row align-items-start justify-content-start">
+									<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+										<div><div><a href="http://127.0.0.1:8000/cart/">
+											<h3>Cart</h3></a></div></div>
+									</div>
+									<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
+										<div><div><a href="http://127.0.0.1:8000/checkout/">
+											<h3>Buy</h3></a></div></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+  <div class="container mt-4">
+
+    <div class="row mt-4">
+        <div class="col-md-8 blog-main">
+         
+
+          
+              <!-- <a href="#">Mark</a></p> -->
+    		    <!-- <p> {{post.description}}</p> -->
+
+            <!-- <h2>{{post.head1}}</h2>
+            <p>{{post.chead1}}</p>
+
+            <h3>{{post.head2}}</h3>
+            <p> {{post.chead2}}</p> -->
+            
+          <!-- /.blog-post -->
+
+    	  </div><!-- /.blog-main -->
+
+
+      <aside class="col-lg-7 blog-sidebar">
+        <div class="p-4 mb-3 bg-light rounded">
+         </div> 
+       </aside>  
+            <!-- <p class="mb-0">My Awesome Cart is an <em>e commerce website </em> . You can use it to buy and search for items online.</p> -->
+     
+            
+            
+                    
+
+
+          
+        <!-- <div class="p-4">
+          <h4 class="font-italic">Contact Us on :</h4>
+          <ol class="list-unstyled">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ol>
+        </div>
+       --><!-- /.blog-sidebar -->
+    
+  </div><!-- /.row -->
+  </div>
+ <script src="{% static 'Category/js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'Category/styles/bootstrap-4.1.2/popper.js' %}"></script>
+<script src="{% static 'Category/styles/bootstrap-4.1.2/bootstrap.min.js' %}"></script>
+<script src="{% static 'Category/plugins/greensock/TweenMax.min.js' %}"></script>
+<script src="{% static 'Category/plugins/greensock/TimelineMax.min.js' %}"></script>
+<script src="{% static 'Category/plugins/scrollmagic/ScrollMagic.min.js' %}"></script>
+<script src="{% static 'Category/plugins/greensock/animation.gsap.min.js' %}"></script>
+<script src="{% static 'Category/plugins/greensock/ScrollToPlugin.min.js' %}"></script>
+<script src="{% static 'Category/plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
+<script src="{% static 'Category/plugins/easing/easing.js' %}"></script>
+<script src="{% static 'Category/plugins/progressbar/progressbar.min.js' %}"></script>
+<script src="{% static 'Category/plugins/parallax-js-master/parallax.min.js' %}"></script>
+<script src="{% static 'Category/plugins/flexslider/jquery.flexslider-min.js' %}"></script>
+<script src="{% static 'Category/js/product.js' %}"></script>
+  {% endblock %}

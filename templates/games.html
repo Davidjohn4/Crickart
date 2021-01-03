@@ -1,0 +1,382 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{% static 'images/bg3.jpg' %}');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate pb-5 text-center">
+            <h1 class="mb-3 bread">Matches</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Matches <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+		<section class="ftco-section ftco-game-schedule bg-light">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 heading-section ftco-animate mb-4">
+          	<span class="subheading">Game Schedule</span>
+					</div>
+				</div>
+				<div class="row ftco-animate">
+					<div class="col-md-12 carousel-game-schedule owl-carousel">
+						<div class="item">
+							<div class="game-schedule">
+		          	<div class="sport-team d-flex align-items-center">
+	          			<div class="img logo" style="background-image: url({% static 'images/team02.jpg' %});"></div>
+									<div class="pl-4 desc">
+										<span class="venue">Mumbai</span>
+										<h4 class="team-name">MI vs CSK</h4>
+										<span class="date">April 15, 2020</span>
+									</div>
+		          	</div>
+		          </div>
+	          </div>
+	          <div class="item">
+							<div class="game-schedule">
+		          	<div class="sport-team d-flex align-items-center">
+	          			<div class="img logo" style="background-image: url({% static 'images/team03.jpg' %});"></div>
+									<div class="pl-4 desc">
+										<span class="venue">Delhi</span>
+										<h4 class="team-name">DC vs KXP</h4>
+										<span class="date">April 16, 2020</span>
+									</div>
+		          	</div>
+		          </div>
+	          </div>
+	          <div class="item">
+							<div class="game-schedule">
+		          	<div class="sport-team d-flex align-items-center">
+	          			<div class="img logo" style="background-image: url({% static 'images/team05.jpg' %});"></div>
+									<div class="pl-4 desc">
+										<span class="venue">Bengaluru</span>
+										<h4 class="team-name">RCB vs KKR</h4>
+										<span class="date">April 17, 2020</span>
+									</div>
+		          	</div>
+		          </div>
+	          </div>
+	          <div class="item">
+							<div class="game-schedule">
+		          	<div class="sport-team d-flex align-items-center">
+	          			<div class="img logo" style="background-image: url({% static 'images/team06.jpg' %});"></div>
+									<div class="pl-4 desc">
+										<span class="venue">Hyderabad</span>
+										<h4 class="team-name">SH vs MI</h4>
+										<span class="date">April 18, 2020</span>
+									</div>
+		          	</div>
+		          </div>
+	          </div>
+	          <div class="item">
+							<div class="game-schedule">
+		          	<div class="sport-team d-flex align-items-center">
+	          			<div class="img logo" style="background-image: url({% static 'images/team07.jpg' %});"></div>
+									<div class="pl-4 desc">
+										<span class="venue">Chennai</span>
+										<h4 class="team-name">CSK vs RR</h4>
+										<span class="date">April 19, 2020</span>
+									</div>
+		          	</div>
+		          </div>
+	          </div>
+	          <div class="item">
+							<div class="game-schedule">
+		          	<div class="sport-team d-flex align-items-center">
+	          			<div class="img logo" style="background-image: url({% static 'images/team08.jpg' %});"></div>
+									<div class="pl-4 desc">
+										<span class="venue">Kolkata</span>
+										<h4 class="team-name">KKR vs DC</h4>
+										<span class="date">April 20, 2020</span>
+									</div>
+		          	</div>
+		          </div>
+	          </div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="ftco-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+	          <div class="heading-section ftco-animate">
+	          	<span class="subheading">Game Report</span>
+	            <h2 class="mb-4">CRICKET Game Reports 2019</h2>
+	          </div>
+	          <div class="scoreboard mb-5 mb-lg-3">
+	          	<div class="divider text-center"><span>Tue. MAY 30, 2019; CRICKET WORLD CUP</span></div>
+	          	<div class="d-sm-flex mb-4">
+		          	<div class="sport-team d-flex align-items-center">
+	          			<div class="img logo" style="background-image: url({% static 'images/IND.jpg' %});"></div>
+									<div class="text-center px-1 px-md-3 desc">
+										<h3 class="score win"><span>3</span></h3>
+										<h4 class="team-name">IND</h4>
+									</div>
+		          	</div>
+		          	<div class="sport-team d-flex align-items-center">
+	          			<div class="img logo order-sm-last" style="background-image: url({% static 'images/SA.jpg' %});"></div>
+									<div class="text-center px-1 px-md-3 desc">
+										<h3 class="score lost"><span>2</span></h3>
+										<h4 class="team-name">SA</h4>
+									</div>
+		          	</div>
+	          	</div>
+	          	<div class="text-center">
+		          	<p><a href="https://www.google.com/search?q=india+vs+south+africa+2020&rlz=1C1CHBF_enIN853IN853&oq=india&aqs=chrome.0.69i59j69i57j46l3j0l2j69i60.5548j0j4&sourceid=chrome&ie=UTF-8#sie=m;/g/11h3spxs5x;5;/m/021q23;dt;fp;1;;" class="btn btn-primary">More Details</a></p>
+		          </div>
+	          </div>
+
+	          <div class="scoreboard mb-5 mb-lg-3">
+	          	<div class="divider text-center"><span>Wed. JUN 01, 2019; CRICKET WORLD CUP</span></div>
+	          	<div class="d-sm-flex mb-4">
+		          	<div class="sport-team d-flex align-items-center">
+	          			<div class="img logo" style="background-image: url({% static 'images/WI.jpg' %});"></div>
+									<div class="text-center px-1 px-md-3 desc">
+										<h3 class="score lost"><span>2</span></h3>
+										<h4 class="team-name">WI</h4>
+									</div>
+		          	</div>
+		          	<div class="sport-team d-flex align-items-center">
+	          			<div class="img logo order-sm-last" style="background-image: url({% static 'images/AUS.jpg' %});"></div>
+									<div class="text-center px-1 px-md-3 desc">
+										<h3 class="score win"><span>3</span></h3>
+										<h4 class="team-name">AUS</h4>
+									</div>
+		          	</div>
+	          	</div>
+	          	<div class="text-center">
+		          	<p><a href="https://www.google.com/search?rlz=1C1CHBF_enIN853IN853&sxsrf=ALeKk0197GlMMKnqrslIOOpdd_isf6Fseg%3A1591966409742&ei=yXrjXrD0LLnXz7sPiZWNiAE&q=WI+Vs+Aus+2020&oq=WI+Vs+Aus+2020&gs_lcp=CgZwc3ktYWIQAzIGCAAQBxAeMgQIABAeMgYIABAIEB4yBggAEAgQHjIGCAAQCBAeOgQIABBHOgcIIxCwAhAnOgQIABANOgUIABCRAjoHCAAQsQMQQzoECAAQQzoICAAQCBAHEB46CAgAEAgQDRAeULKmAliK_QJgtJ8DaABwAXgBgAGLAogByBSSAQUwLjkuNZgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwjw_OKCqfzpAhW563MBHYlKAxEQ4dUDCAw&uact=5#sie=m;/g/11ggs0jvnf;5;/m/026y268;dt;fp;1;;" class="btn btn-primary">More Details</a></p>
+		          </div>
+	          </div>
+
+	          <div class="scoreboard mb-5 mb-lg-3">
+	          	<div class="divider text-center"><span>Thu. JUN 02, 2019; CRICKET WORLD CUP</span></div>
+	          	<div class="d-sm-flex mb-4">
+		          	<div class="sport-team d-flex align-items-center">
+	          			<div class="img logo" style="background-image: url({% static 'images/ENG.jpg' %});"></div>
+									<div class="text-center px-1 px-md-3 desc">
+										<h3 class="score win"><span>4</span></h3>
+										<h4 class="team-name">ENG</h4>
+									</div>
+		          	</div>
+		          	<div class="sport-team d-flex align-items-center">
+	          			<div class="img logo order-sm-last" style="background-image: url({% static 'images/NZ.jpg' %});"></div>
+									<div class="text-center px-1 px-md-3 desc">
+										<h3 class="score lost"><span>2</span></h3>
+										<h4 class="team-name">NZ</h4>
+									</div>
+		          	</div>
+	          	</div>
+	          	<div class="text-center">
+		          	<p><a href="https://www.google.com/search?rlz=1C1CHBF_enIN853IN853&sxsrf=ALeKk00Aufbm9gH41KWJbXV0E024AVTczQ%3A1591966650879&ei=unvjXo-ZNY_C3LUPxue5sAg&q=ENG+VS+NZ+2020&oq=ENG+VS+NZ+2020&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyBggAEAgQHjIGCAAQCBAeMgYIABAIEB4yBggAEAgQHjoGCAAQBxAeOgQIABANOggIABAIEA0QHlDqtwFYk9wCYKPkAmgAcAB4AIABkgKIAfgOkgEFMC40LjWYAQCgAQGqAQdnd3Mtd2l6&sclient=psy-ab&ved=0ahUKEwiP3uD1qfzpAhUPIbcAHcZzDoYQ4dUDCAw&uact=5#sie=m;/g/11ggs062w8;5;/g/11hcqprn2n;dt;fp;1;;" class="btn btn-primary">More Details</a></p>
+		          </div>
+	          </div>
+	          <div class="scoreboard mb-5 mb-lg-3">
+	          	<div class="divider text-center"><span>Fri. JUN 03, 2019; CRICKET WORLD CUP</span></div>
+	          	<div class="d-sm-flex mb-4">
+		          	<div class="sport-team d-flex align-items-center">
+	          			<div class="img logo" style="background-image: url({% static 'images/SRI.jpg' %});"></div>
+									<div class="text-center px-1 px-md-3 desc">
+										<h3 class="score win"><span>3</span></h3>
+										<h4 class="team-name">SL</h4>
+									</div>
+		          	</div>
+		          	<div class="sport-team d-flex align-items-center">
+	          			<div class="img logo order-sm-last" style="background-image: url({% static 'images/AFG.jpg' %});"></div>
+									<div class="text-center px-1 px-md-3 desc">
+										<h3 class="score lost"><span>2</span></h3>
+										<h4 class="team-name">AFG</h4>
+									</div>
+		          	</div>
+	          	</div>
+	          	<div class="text-center">
+		          	<p><a href="https://www.google.com/search?rlz=1C1CHBF_enIN853IN853&sxsrf=ALeKk0322LWFjc-i0lEAGMKaw94zhqLgBA:1591966752297&q=sl+vs+AFg&spell=1&sa=X&ved=2ahUKEwiK4o6mqvzpAhUY6XMBHdHAAxwQBSgAegQIDBAn&biw=1396&bih=686#sie=m;/g/11hcztwdmb;5;/m/02k52y;dt;fp;1;;" class="btn btn-primary">More Details</a></p>
+		          </div>
+	          </div>
+	          <div class="scoreboard mb-5 mb-lg-3">
+	          	<div class="divider text-center"><span>Sat. Jun 04, 2019; FIFA Champions League</span></div>
+	          	<div class="d-sm-flex mb-4">
+		          	<div class="sport-team d-flex align-items-center">
+	          			<div class="img logo" style="background-image: url({% static 'images/BAN.jpg' %});"></div>
+									<div class="text-center px-1 px-md-3 desc">
+										<h3 class="score win"><span>3</span></h3>
+										<h4 class="team-name">BAN</h4>
+									</div>
+		          	</div>
+		          	<div class="sport-team d-flex align-items-center">
+	          			<div class="img logo order-sm-last" style="background-image: url({% static 'images/PAK.jpg' %});"></div>
+									<div class="text-center px-1 px-md-3 desc">
+										<h3 class="score lost"><span>2</span></h3>
+										<h4 class="team-name">PAK</h4>
+									</div>
+		          	</div>
+	          	</div>
+	          	<div class="text-center">
+		          	<p><a href="https://www.google.com/search?rlz=1C1CHBF_enIN853IN853&biw=1396&bih=686&sxsrf=ALeKk022k5twP_Vli7ivJ5H4LHEOQjEPGg%3A1591966804771&ei=VHzjXrHMLqXB3LUP5L-joAk&q=ban+vs+PAk&oq=ban+vs+PAk&gs_lcp=CgZwc3ktYWIQAzIFCAAQkQIyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BAgAEEc6BAgjECc6BwgAEBQQhwJQsyZY8jZg-UFoAHABeACAAbMBiAHLBpIBAzAuNZgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwixxpG_qvzpAhWlILcAHeTfCJQQ4dUDCAw&uact=5#sie=m;/g/11h001_0y5;5;/g/11fsmf_6d7;dt;fp;1;;" class="btn btn-primary">More Details</a></p>
+		          </div>
+	          </div>
+	          <div class="row mt-5">
+		          <div class="col text-center">
+		            <div class="block-27">
+		              <ul>
+		                <li><a href="#">&lt;</a></li>
+		                <li class="active"><span>1</span></li>
+		                <li><a href="#">2</a></li>
+		                <li><a href="#">3</a></li>
+		                <li><a href="#">4</a></li>
+		                <li><a href="#">5</a></li>
+		                <li><a href="#">&gt;</a></li>
+		              </ul>
+		            </div>
+		          </div>
+		        </div>
+	        </div>
+					<div class="col-md-5 sidebar">
+						<div class="sidebar-box">
+	            <h2 class="mb-4">Latest Video</h2>
+							<div class="img d-flex align-items-center justify-content-center py-5" style="background-image: url({% static 'images/win.jpg' %}); width: 100%;">
+								<p class="text-center mb-0 py-5">
+									<a href="https://www.youtube.com/watch?v=amMJfaB5dXo" class="icon-video-2 popup-vimeo d-flex justify-content-center align-items-center mr-3">
+		    						<span class="ion-ios-play"></span>
+		    					</a>
+		    					<small style="color: rgba(255,255,255,1); font-size: 16px;">Watch Highlights</small>
+	    					</p>
+							</div>
+						</div>
+						<div class="sidebar-box">
+	            <h2 class="mb-4">League Table</h2>
+	            <table class="table table-league">
+						    <thead>
+						      <tr>
+						        <th>Team</th>
+						        <th>M</th>
+						        <th>W</th>
+						        <th>L</th>
+						        <th>PTS</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr>
+						        <td>Chennai Super Kings</td>
+						        <td>0</td>
+						        <td>0</td>
+						        <td>0</td>
+						        <td>0</td>
+						      </tr>
+						      <tr>
+						        <td>Delhi Capitals</td>
+						        <td>0</td>
+						        <td>0</td>
+						        <td>0</td>
+						        <td>0</td>
+						      </tr>
+						      <tr>
+						        <td>Kings XI Punjab</td>
+						        <td>0</td>
+						        <td>0</td>
+						        <td>0</td>
+						        <td>0</td>
+						      </tr>
+						      <tr>
+						        <td>Kolkata Knight Riders</td>
+						        <td>0</td>
+						        <td>0</td>
+						        <td>0</td>
+						        <td>0</td>
+						      </tr>
+						      <tr>
+						        <td>Mumbai Indians</td>
+						        <td>0</td>
+						        <td>0</td>
+						        <td>0</td>
+						        <td>0</td>
+						      </tr>
+						      <tr>
+						        <td>Rajasthan Royals</td>
+						        <td>0</td>
+						        <td>0</td>
+						        <td>0</td>
+						        <td>0</td>
+						      </tr>
+						      <tr>
+						        <td>Royal Challengers Bangalore</td>
+						        <td>0</td>
+						        <td>0</td>
+						        <td>0</td>
+						        <td>0</td>
+						      </tr>
+						      <tr>
+						        <td>Sunrisers Hyderabad</td>
+						        <td>0</td>
+						        <td>0</td>
+						        <td>0</td>
+						        <td>0</td>
+						      </tr>
+						    </tbody>
+						  </table>
+						</div>
+						<div class="sidebar-box">
+	            <h2 class="mb-4">Top centuries</h2>
+	            <div class="row">
+	            	<div class="col-md-6 top-score pb-4 mb-1">
+			    				<div class="img" style="background-image: url({% static 'images/rohit.jpg' %});"></div>
+			    				<div class="text text-center">
+			    					<h3 class="mb-0">Rohit Sharma</h3>
+			    					<span class="score">5 centuries</span>
+			    				</div>
+		    				</div>
+		    				<div class="col-md-6 top-score pb-4 mb-1">
+			    				<div class="img" style="background-image: url({% static 'images/david.jpg' %});"></div>
+			    				<div class="text text-center">
+			    					<h3 class="mb-0">David Warner</h3>
+			    					<span class="score">3 centuries</span>
+			    				</div>
+		    				</div>
+		    				<div class="col-md-6 top-score pb-4 mb-1">
+			    				<div class="img" style="background-image: url({% static 'images/Shakib-Al.jpg' %});"></div>
+			    				<div class="text text-center">
+			    					<h3 class="mb-0">Shakib Al Hasan </h3>
+			    					<span class="score">2 centuries</span>
+			    				</div>
+		    				</div>
+		    				<div class="col-md-6 top-score pb-4 mb-1">
+			    				<div class="img" style="background-image: url({% static 'images/finch.jpg' %});"></div>
+			    				<div class="text text-center">
+			    					<h3 class="mb-0">Kane Williamson</h3>
+			    					<span class="score">2 centuries</span>
+			    				</div>
+		    				</div>
+	            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+<!-- Subcribe -->
+	<section class="ftco-subscribe img" style="background-image: url({% static 'images/bg1.jpg' %});">
+      <div class="overlay">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-10 text-wrap text-center heading-section heading-section-white ftco-animate">
+              <h2>Subcribe to our upcoming match</h2>
+              <div class="row d-flex justify-content-center mt-4 mb-4">
+                <div class="col-md-10">
+                  <form action="#" class="subscribe-form">
+                    <div class="form-group d-flex">
+                      <input type="text" class="form-control" placeholder="Enter email address">
+                      <input type="submit" value="Subscribe" class="submit px-3">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   {% endblock %}

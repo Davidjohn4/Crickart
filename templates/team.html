@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Team Register</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="{% static 'player/images/icons/favicon.ico' %}"/>
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'player/vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'player/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'player/fonts/Linearicons-Free-v1.0.0/icon-font.min.css' %}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'player/vendor/animate/animate.css' %}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'player/vendor/css-hamburgers/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'player/vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'player/css/util.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'player/css/main.css' %}">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+    <div class="container-contact100" style="background-image: url({% static 'images/play.jpg' %});">
+        <div class="wrap-contact100">
+            <form class="contact100-form validate-form" action="#" method="POST" enctype="multipart">
+
+                <span class="contact100-form-title">
+                    Team Register
+                </span>
+                  {% csrf_token %}
+                <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Team Name is required">
+                    <span class="label-input100">Team Name *</span>
+                    <input class="input100" type="text" name="team_name" placeholder="Enter your name">
+                </div>
+
+                <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="College Name is required">
+                    <span class="label-input100">College Name *</span>
+                    <input class="input100" type="text" name="college_name" placeholder="Enter your college name">
+                </div>
+
+                <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Captain Name is required">
+                    <span class="label-input100">Captain Name *</span>
+                    <input class="input100" type="text" name="captain_name" placeholder="Enter captain name">
+                </div>
+                <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="College Address is required">
+                    <span class="label-input100">College Address *</span>
+                    <input class="input100" type="text" name="college_address" placeholder="Enter your college address">
+                </div>
+
+                <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                    <span class="label-input100">Email id *</span>
+                    <input class="input100" type="text" name="email_id" placeholder="Enter your email">
+                </div>
+
+                <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Logo is required">
+                    <span class="team_logo">Team Logo *</span>
+
+                    <div class="input-group js-input-file">
+                                    <input class="input-file" type="file" name="team_logo" id="team_logo">
+                                    <label class="label--file" for="file">Choose file</label> 
+                    </div>
+                </div>
+
+                <!--<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Group is required">
+                    <span class="label-input100">Group *</span>
+                    <select id="inputState" class="input100" name="group">
+                        <option> Choose...</option>
+                        <option>A</option>
+                        <option>B</option>
+                        <option selected="">C</option>
+                        <option>D</option>
+                        <option>E</option>
+                    </select>
+                </div>-->
+
+                <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Date is required">
+                    <span class="label-input100">Date *</span><!--class="form-control-->
+                    <input type="date" id="birthDate" class="input100" name="date">
+                </div>
+
+
+                <div class="container-contact100-form-btn">
+                    <div class="wrap-contact100-form-btn">
+                        <div class="contact100-form-bgbtn"></div>
+                        <button class="contact100-form-btn">
+                          Submit
+                        </button>
+                    </div>
+                </div>
+
+                <div class="container-contact100-form-btn">
+                    <div class="wrap-contact100-form-btn">
+                        <div class="contact100-form-bgbtn"></div>
+                        <button class="contact100-form-btn">
+                           <a href="http://127.0.0.1:8000/player/">
+                        Player Register
+                    </a>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+    <script src="{% static 'player/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+    <script src="{% static 'player/vendor/bootstrap/js/popper.js' %}"></script>
+    <script src="{% static 'player/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+    <script src="{% static 'player/vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+    <script src="{% static 'player/js/main.js' %}"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
+
+   {% endblock %}
+<!--Message should be show  -->
+{% block js %}
+<script>
+{% if thank %}
+alert('Team Register Succesfully.');
+document.location = "/team";
+
+
+{% endif %}
+</script>
+{% endblock %}

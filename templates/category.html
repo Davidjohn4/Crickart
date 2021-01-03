@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <br>
+    <br>
+      <br>
+        
+
+<div class="container mt-4">
+  <div class="row my-2">
+    {% for item in myposts %}
+    <br>
+    <br>
+    <br>
+        
+      <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">{{item.product_name}}</strong>
+                <h3 class="mb-0">Rs.{{item.price}}</h3>
+                <p class="card-text mb-auto">{{item.description}}</p>
+                <a href="/product/{{item.product_id}}" class="stretched-link">Read More &rarr;</a>
+
+                      <!--<a href="http://127.0.0.1:8000/cart/" class="btn btn-primary"><h3>Cart</h3></a>-->
+                      
+                      <form action="http://127.0.0.1:8000/cart/" method="POST">
+                                {% csrf_token %}
+                      <input type="hidden" name="cmd" value="_cart" />
+                      <input type="hidden" name="add" value="3" /> 
+                      <input type="hidden" name="w3ls_item" value="SUNLEY Sarthak Junior Combo Cr" /> 
+                      <input type="hidden" name="amount" value="590" />   
+                      <button type="submit" class="w3ls-cart">Add to cart</button>
+               <!-- <buton id="pr{{i.product_id}}" class="btn btn-primary cart"><h3>Cart</h3></a>-->
+              </div></buton>
+               </form>
+          
+            <div class="col-auto d-none d-lg-block">
+                <img src="{{item.image.url}}" class="bd-placeholder-img" width="200" height="250"  aria-label="Placeholder: Thumbnail"/>
+            </div>
+           </div>
+      </div>
+        {% if forloop.counter|divisibleby:2 %}
+  </div><div class="row my-2">
+
+      {% endif %}
+
+      {% endfor %}
+
+  </div>  
+</div>
+  <!-- cart-js -->
+  <script src="{% static 'js/minicart.js' %}"></script>
+  <script>
+        w3ls.render();
+
+        w3ls.cart.on('w3sb_checkout', function (evt) {
+          var items, len, i;
+
+          if (this.subtotal() > 0) {
+            items = this.items();
+
+            for (i = 0, len = items.length; i < len; i++) { 
+            }
+          }
+        });
+    </script>  
+
+
+  <!-- //cart-js --> 
+
+{% endblock %}
+
+
+<!--{% block js %} 
+<script>
+console.log('working');
+if(localStorage.getItem('cart'))==null{
+  var cart ={};
+}
+else
+{
+  cart =JSON.parse(localStorage.getItem('cart'));
+}
+$('.cart').click(function(){
+
+  console.log('clicked');
+  var idstr = this.id.tostring();
+  console.log(idstr);
+  if (cart[idstr] !=undefine){
+    cart[idstr] = cart[idstr] + 1;
+  }
+  else
+  {
+    cart[idstr] = 1;
+  }
+  console.log(cart);
+  localStorage.setItem('cart',JSON.stringify(cart));
+  document.getElementById('cart').innerHTML - Objects.Keys(cart).length;
+});
+</script>
+
+
+
+ {% endblock%}-->
