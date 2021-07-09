@@ -2,7 +2,7 @@
 This website do a Player and team Registration. It have blogs and Shopping also there . 
 
 <h1> Home Page</h1>
-  ![image](https://user-images.githubusercontent.com/69141217/125024391-50cd0480-e09e-11eb-9565-476d480727c8.png)
+  (https://user-images.githubusercontent.com/69141217/125024391-50cd0480-e09e-11eb-9565-476d480727c8.png)
 ![image](https://user-images.githubusercontent.com/69141217/125024460-7528e100-e09e-11eb-9687-ec903a4fe3ec.png)
 ![image](https://user-images.githubusercontent.com/69141217/125024502-87a31a80-e09e-11eb-99b6-572a0a833426.png)
 <Team Regeistration>
