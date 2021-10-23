@@ -1,6 +1,6 @@
 # Cricket
-This website using a templates and bootstrap.
-In the website Player and team Registration. It have blogs and Shopping also there . 
+<h3>This website using a templates and bootstrap.<br>
+In the website Player and team Registration. It have blogs and Shopping also there . </h3>
 
 Home Page
 ![image](https://user-images.githubusercontent.com/69141217/125026890-0d28c980-e0a3-11eb-9d01-3b011989373b.png)
